@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 body{
+    background-image: url(images/body.png);
     background-color: rgb(116, 2, 0);
+    background-size: cover;
 }
 
 h1{
@@ -23,3 +25,31 @@ div{
     font-family: 'Rubik Bubbles' , serif;
     
 }
+
+.glow{
+    color: red;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #e9e7eb, 0 0 60px #eee9f0, 0 0 70px #ddd8df;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #cbcbcb, 0 0 40px #d5d0d3, 0 0 50px #e5e2e4, 
+                   0 0 60px #edd6e1, 0 0 70px #dcd9db, 0 0 80px #cfc9cc;
+    }
+  }
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+   }
